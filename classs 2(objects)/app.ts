@@ -40,3 +40,16 @@ let car: Car = {
 
 
 console.log(person,car)
+
+// narrowing
+
+function add(left:Number | String,right:Number|String){
+    if(typeof right==='number' && typeof left ==='number'){
+
+        return left + right;
+    }
+    else{
+        return left + ' ' + right;
+    }
+}
+console.log(add('10','10'))
